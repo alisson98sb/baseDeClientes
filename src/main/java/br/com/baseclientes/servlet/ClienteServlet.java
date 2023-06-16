@@ -1,6 +1,7 @@
-package br.com.baseclientes.clienteServlet;
+package br.com.baseclientes.servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,8 +22,16 @@ public class ClienteServlet extends HttpServlet {
 		
 		System.out.println("Cadastrando nova empresa: " + clientName);
 		
-		//chamar jsp
+		Cliente cliente = new Cliente();
+		cliente.setClientName(clientName);
+		
+		Banco banco = new Banco();
+		banco.adiciona(cliente);
+		
+		
+		//chamar jsp do cliente cadastrado
 		RequestDispatcher rd = request.getRequestDispatcher("/cliente.jsp");
+		request.setAttribute("nome", clientName);
 		rd.forward(request, response);
 	}
 
