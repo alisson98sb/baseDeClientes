@@ -5,8 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
-	Cliente cadastrado com sucesso!
+<div>
+	Cliente cadastrado com sucesso! </br>
+	Nome da empresa cadastrada: ${ nome } </br>
+	Cidade da empresa cadastrada: ${ cidade } </br>
+	Contato: ${ numero }
+</div>
+<div>
+	<form action="/basedeclientes/listagem" method="get">
+		<input type="submit" value="Exibir lista de clientes">
+	</form>
+</div>
 </body>
 </html>
