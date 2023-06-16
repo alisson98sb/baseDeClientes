@@ -10,8 +10,18 @@
 	<div>
 		<h1>Cadastro de clientes</h1>
 		<form action="/basedeclientes/cliente" method="post">
-			Nome do cliente: <input type="text" name="nome"/>
+			Nome do cliente: 
+			<input type="text" name="nome"/> 
+			
+			Cidade do cliente:
+			<input type="text" name="city"/>
+			
+			Contato do cliente:
+			<input type="text" name="phone" />
+			
 			<input type="submit" />
+			
+			
 		</form>
 	</div>
 </body>

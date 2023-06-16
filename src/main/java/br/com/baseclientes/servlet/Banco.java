@@ -7,11 +7,14 @@ public class Banco {
 	private static List<Cliente> clienteLista = new ArrayList<>();
 	
 	static {
+		 
 		Cliente cliente1 = new Cliente();
 		cliente1.setClientName("Anderson Dalosse");
+		cliente1.setClientCity("Maringá");
 		
 		Cliente cliente2 = new Cliente();
 		cliente2.setClientName("Sabrina Almeida");
+		cliente2.setClientCity("Maringá");
 		
 		clienteLista.add(cliente1);
 		clienteLista.add(cliente2);
@@ -26,5 +29,5 @@ public class Banco {
 		System.out.println("Exibindo clientes: " + Banco.clienteLista);
 		return Banco.clienteLista;
 	}
-	
+
 }

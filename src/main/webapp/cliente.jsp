@@ -10,7 +10,9 @@
 <body>
 <div>
 	Cliente cadastrado com sucesso! </br>
-	Nome da empresa cadastrada: ${ nome }
+	Nome da empresa cadastrada: ${ nome } </br>
+	Cidade da empresa cadastrada: ${ cidade } </br>
+	Contato: ${ numero }
 </div>
 <div>
 	<form action="/basedeclientes/listagem" method="get">
