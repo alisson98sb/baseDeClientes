@@ -6,20 +6,8 @@ import java.util.List;
 public class Banco {
 	private static List<Cliente> clienteLista = new ArrayList<>();
 	
-	static {
-		 
-		Cliente cliente1 = new Cliente();
-		cliente1.setClientName("Anderson Dalosse");
-		cliente1.setClientCity("Maringá");
-		
-		Cliente cliente2 = new Cliente();
-		cliente2.setClientName("Sabrina Almeida");
-		cliente2.setClientCity("Maringá");
-		
-		clienteLista.add(cliente1);
-		clienteLista.add(cliente2);
-	}
-	
+	static {}
+
 	public void adiciona(Cliente cliente) {	
 		Banco.clienteLista.add(cliente);
 		System.out.println("Banco: Cliente " +cliente+ "cadastrado com sucesso");
